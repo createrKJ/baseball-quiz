@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>野球脳 β版</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container" id="gameScreen">
+
+        <h1>⚾ 野球脳 β版</h1>
+
+        <h2 id="questionNumber"></h2>
+
+        <div class="image">
+
+            【ここに野球場の図が入ります】
+
+        </div>
+
+        <p class="question" id="questionText"> </p>
+
+        <div id="choices"></div>
+
+        <h2 id="result"></h2>
+
+        <p id="comment"></p>
+
+<button onclick="nextQuestion()">
+    次の問題 ▶
+</button>
+
+    </div>
+
+    <div class="container" id="resultScreen">
+
+    <h1>🎉 ゲーム終了！</h1>
+
+    <h2 id="finalScore"></h2>
+
+    <h2 id="rank"></h2>
+
+    <button onclick="restartGame()">
+        もう一度挑戦
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
