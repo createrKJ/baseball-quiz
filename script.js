@@ -155,7 +155,8 @@ let currentQuestion = 0;
 let answered = false;
 let score = 0;
 
-let correctSound = new Audio("sounds/correct.wav");
+const correctSound = new Audio("sounds/correct.mp3");
+const wrongSound = new Audio("sounds/wrong.mp3");
 
 function showQuestion() {
 
@@ -182,6 +183,8 @@ shuffledChoices.sort(() => Math.random() - 0.5);
 }
 
     document.getElementById("choices").innerHTML = buttons;
+document.getElementById("result").style.display = "none";
+document.getElementById("comment").style.display = "none";
 
 }
 
@@ -238,12 +241,16 @@ function checkAnswer(answer, buttonIndex) {
 return;
 }
 
+document.getElementById("result").style.display = "block";
+document.getElementById("comment").style.display = "block";
+
 let selectedButton = document.getElementById("choice" + buttonIndex);
 
 if (answer) {
 
 score++;
 
+correctSound.currentTime = 0;
 correctSound.play();
 
 selectedButton.style.backgroundColor = "#4CAF50";
@@ -258,6 +265,9 @@ questions[currentQuestion].comment;
     }
 
     else{
+
+    wrongSound.currentTime = 0;
+    wrongSound.play();
 
     selectedButton.style.backgroundColor = "#F44336";
 
@@ -285,6 +295,9 @@ document.getElementById("resultScreen").style.display = "none";
 
     document.getElementById("result").innerHTML = "";
     document.getElementById("comment").innerHTML = "";
+
+document.getElementById("result").style.display = "none";
+document.getElementById("comment").style.display = "none";
 
     showQuestion();
 

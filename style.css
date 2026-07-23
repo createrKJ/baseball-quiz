@@ -1,6 +1,10 @@
 body{
 
-    background:#eef6ff;
+    background-image: url("images/baseball_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     font-family:sans-serif;
 
@@ -8,7 +12,8 @@ body{
 
 .container{
 
-    width:700px;
+    width:95%;
+    max-width:700px;
 
     margin:auto;
 
@@ -30,7 +35,19 @@ body{
 
 .question{
 
-    font-size:22px;
+    font-size:24px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+
+    line-height:1.6;
 
 }
 
@@ -39,24 +56,44 @@ button{
     width:100%;
     max-width:500px;
 
-    padding:15px 20px;
-    margin:8px;
-    font-size:18px;
+    padding:20px;
+    margin:10px 0;
+    font-size:22px;
 
     text-align:left;
-    line-height:1.5;
+    line-height:1.6;
 
     cursor:pointer;
+
+border: none;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+background: white;
+
 
 }
 
 button:hover{
-
     background:#1565C0;
-
     color:white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+#subtitle{
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    color:#1E3A5F;
+
+    margin-top:-10px;
+
+    margin-bottom:25px;
 
 }
+
 
 #result{
 
@@ -67,6 +104,20 @@ button:hover{
 #comment{
 
     font-size:20px;
+
+    background: rgba(255,255,255,0.95);
+
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
+
+    line-height:1.8;
+
+    text-align:left;
 
 }
 
