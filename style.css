@@ -12,8 +12,8 @@ body{
 
 .container{
 
-    width:95%;
-    max-width:700px;
+    width:97%;
+    max-width:720px;
 
     margin:auto;
 
@@ -41,7 +41,7 @@ body{
 
 .question{
 
-    font: size 34px;
+    font-size:28px;
 
     background:white;
 
@@ -62,12 +62,12 @@ button{
     width:100%;
     max-width:500px;
 
-    padding:22px 18px;
+    padding:18px 18px;
     margin:10px 0;
-    font-size:30px;
+    font-size:24px;
 
     text-align:left;
-    line-height:1.6;
+    line-height:1.5;
 
     cursor:pointer;
 
@@ -109,7 +109,7 @@ button:hover{
 
 #comment{
 
-    font-size:26px;
+    font-size:24px;
 
     background: rgba(255,255,255,0.95);
 
@@ -131,9 +131,9 @@ button:hover{
 
     max-width:320px;
 
-    padding:20px;
+    padding:16px;
 
-    font-size:30px;
+    font-size:24px;
 
     font-weight:bold;
 
