@@ -23,13 +23,19 @@ body{
 
 .image{
 
-    border:2px dashed gray;
+    margin:20px 0;
 
-    padding:40px;
+}
 
-    margin:20px;
+#questionImage{
 
-    background:white;
+    width:100%;
+
+    max-width:600px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 8px rgba(0,0,0,0.15);
 
 }
 
@@ -120,6 +126,23 @@ button:hover{
     text-align:left;
 
 }
+
+.nextButton{
+
+    max-width:250px;
+
+    padding:12px;
+
+    font-size:18px;
+
+    text-align:center;
+
+    display:block;
+
+    margin:20px auto;
+
+}
+
 
 #resultScreen {
     display: none;

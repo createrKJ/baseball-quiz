@@ -2,6 +2,8 @@ const questions = [
     {
     number: "問題1",
 
+image: "q1.webp",
+    
     question: "ヒットで1塁に出ました。まず最初にしなければならないことは何ですか？",
 
     choices: [
@@ -181,6 +183,9 @@ shuffledChoices.sort(() => Math.random() - 0.5);
     `;
 
 }
+
+document.getElementById("questionImage").src =
+    "images/" + questions[currentQuestion].image;
 
     document.getElementById("choices").innerHTML = buttons;
 document.getElementById("result").style.display = "none";
