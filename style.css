@@ -135,11 +135,23 @@ button:hover{
 
     font-size:18px;
 
+    font-weight:bold;
+
+    color:white;
+
+    background:#1976D2;
+
+    border:none;
+
+    border-radius:12px;
+
     text-align:center;
 
     display:block;
 
-    margin:20px auto;
+    margin:20px auto 80px auto;
+
+    cursor:pointer;
 
 }
 
